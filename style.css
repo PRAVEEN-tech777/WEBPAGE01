@@ -1,0 +1,104 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.banner a:hover {
+    color: rgb(252, 0, 0);
+}
+
+.content p :hover {
+    border-color: violet;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(18, 18, 18, 22%), rgba(18, 18, 18, 22%)), url(original.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.line {
+    border-top: 8px solid #fff;
+    display: block;
+}
+
+.navbar {
+    width: 85%;
+    margin: 80px;
+    padding: 35px;
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 80px;
+    cursor: pointer;
+}
+
+
+/*
+we change logo size by two methods upper one and this method.
+
+.navbar img {
+    width: 5%;
+    height: auto;
+}*/
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.content h1 {
+    text-align: left;
+    color: seashell;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-align: left;
+    margin-right: 400px;
+    margin-bottom: 100px;
+}
+
+.content p {
+    color: red;
+    text-decoration-color: red;
+    margin-top: 20px;
+    margin-left: 500px;
+    font-weight: 100;
+    list-style: 25px;
+}
